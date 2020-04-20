@@ -1,0 +1,43 @@
+@import "_base"
+@import "_util/mixin"
+@import "_util/grid"
+input, button
+  margin: 0
+  padding: 0
+
+html, body
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  margin: 0
+
+a
+    color: #5FCB71
+    text-decoration: none
+    background-color: transparent
+
+@font-face
+  font-family: FontAwesome
+  font-style: normal
+  font-weight: normal
+  src: url(font-icon-path + ".eot?v=#" + font-icon-version)
+  src: url(font-icon-path + ".eot?#iefix&v=#" + font-icon-version) format("embedded-opentype"),
+       url(font-icon-path + ".woff?v=#" + font-icon-version) format("woff"),
+       url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
+       url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
+
+.text-center
+    text-align: center !important
+
+.nav-icon
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    padding: 20px 15px;
+    position: relative;
+    cursor: pointer;
+
+
+@import "_partial/header"
+@import "_partial/wrap"

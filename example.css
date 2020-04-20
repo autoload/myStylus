@@ -1,0 +1,74 @@
+body {
+  width: 100%;
+}
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+a {
+  color: #5fcb71;
+  text-decoration: none;
+  background-color: transparent;
+}
+@font-face {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+}
+.text-center {
+  text-align: center !important;
+}
+.nav-icon {
+  font-family: FontAwesome;
+  text-align: center;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  padding: 20px 15px;
+  position: relative;
+  cursor: pointer;
+}
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  background: #5fcb71;
+  color: #fff;
+}
+#blog-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+#header a {
+  color: #fff;
+}
+#navigation {
+  padding: 0.5rem 1rem;
+}
+.profile-image {
+  max-width: 160px;
+}
+#nav-search-btn {
+  font-size: 2rem;
+}
+#nav-search-btn:before {
+  content: "\f09b";
+}
+#wrap {
+  background: #ccc;
+  margin-left: 280px;
+}
