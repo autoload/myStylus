@@ -105,6 +105,32 @@ hr {
 #nav-icon-phone:before {
   content: "\f098";
 }
+#profile-menu {
+  padding-left: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+#profile-menu li {
+  list-style: none;
+}
+.nav-line {
+  font-weight: bold;
+}
+.nav-line:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.nav-btn {
+  background-color: rgba(0,0,0,0.3);
+  font-weight: bold;
+  border-radius: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.nav-btn:hover {
+  background-color: rgba(0,0,0,0.5);
+}
 #wrap {
   background: #ccc;
   margin-left: 280px;
