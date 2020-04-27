@@ -12,6 +12,15 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #292929;
+  font-weight: bold;
+}
 ol,
 ul,
 dl {
@@ -115,6 +124,11 @@ hr {
 }
 .nav-line {
   font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 0.25rem;
 }
 .nav-line:hover {
   background-color: rgba(0,0,0,0.5);
@@ -132,6 +146,78 @@ hr {
   background-color: rgba(0,0,0,0.5);
 }
 #wrap {
-  background: #ccc;
   margin-left: 280px;
+}
+#wrap .container {
+  max-width: 820px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#header-section {
+  background: #fafafa !important;
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
+}
+#header-section h2 {
+  margin: 0px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+#blog-list {
+  padding: 3rem !important;
+}
+.item {
+  margin-bottom: 3rem !important;
+}
+.post-thumb {
+  max-width: 110px;
+  border-radius: 2px;
+  margin-right: 1rem !important;
+}
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+.item .title {
+  font-size: 1.275rem;
+  margin: 0;
+}
+.item .title a {
+  color: #292929;
+}
+.meta {
+  color: #8f8f8f;
+  font-size: 0.8125rem;
+}
+.meta span:after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #8f8f8f;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: -3px;
+}
+.meta span:last-child:after {
+  display: none;
+}
+.item .intro {
+  font-size: 0.875rem;
+}
+.item .more-link {
+  font-size: 0.8125rem;
+}
+#footer {
+  background: #223142 !important;
+  color: rgba(255,255,255,0.7);
+}
+#footer a {
+  color: #fff;
 }
