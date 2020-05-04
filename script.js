@@ -1,6 +1,6 @@
 (function($){
   // Mobile nav
-  var $container = $('#container'),
+  var $container = $('.wrap'),
     isMobileNavAnim = false,
     mobileNavAnimDuration = 200;
 
@@ -14,17 +14,10 @@
     }, mobileNavAnimDuration);
   }
 
-  $('#main-nav-toggle').on('click', function(){
+  $('#navbar-toggler').on('click', function(){
     if (isMobileNavAnim) return;
-
     startMobileNavAnim();
     $container.toggleClass('mobile-nav-on');
     stopMobileNavAnim();
-  });
-
-  $('#wrap').on('click', function(){
-    if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
-
-    $container.removeClass('mobile-nav-on');
   });
 })(jQuery);

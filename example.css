@@ -56,7 +56,6 @@ hr {
   cursor: pointer;
 }
 #header {
-  position: static;
   left: 0;
   top: 0;
   height: auto;
@@ -65,6 +64,7 @@ hr {
   color: #fff;
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   #header {
@@ -79,15 +79,44 @@ hr {
   color: #fff;
   padding-top: 1.5rem !important;
   margin-bottom: 1rem !important;
+  position: absolute;
+  width: 100%;
 }
 #header a {
   color: #fff;
 }
 #navigation {
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem;
+}
+#navbar-toggler {
+  border-radius: 2px;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  border: 1px solid rgba(255,255,255,0.8);
+  padding: 0.25rem 0.6rem;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  #navbar-toggler {
+    display: none;
+  }
+}
+#navbar-toggler-icon:before {
+  content: "\f039";
 }
 #profile-image {
   max-width: 160px;
+  padding-top: 1rem !important;
+}
+@media screen and (min-width: 768px) {
+  #profile-image {
+    padding-top: 3rem !important;
+  }
 }
 #profile-text {
   font-size: 0.875rem;
@@ -154,15 +183,27 @@ hr {
 .nav-btn:hover {
   background-color: rgba(0,0,0,0.5);
 }
-#wrap {
+.wrap {
   margin-left: 0px;
+  margin-top: 4.5rem;
+  z-index: 1;
+  position: absolute;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+}
+.mobile-nav-on {
+  margin-top: 700px;
 }
 @media screen and (min-width: 768px) {
-  #wrap {
+  .wrap {
     margin-left: 280px;
+    margin-top: 0;
+    position: static;
   }
 }
-#wrap .container {
+.wrap .container {
   max-width: 820px;
   width: 100%;
   margin-right: auto;
@@ -181,6 +222,7 @@ hr {
 }
 #blog-list {
   padding: 3rem !important;
+  background: #fff !important;
 }
 .item {
   margin-bottom: 3rem !important;

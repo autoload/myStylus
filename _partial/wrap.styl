@@ -1,12 +1,25 @@
-#wrap
+
+.wrap
     margin-left: 0px;
+    margin-top:4.5rem;
+    z-index: 1;
+    position: absolute;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+
+.mobile-nav-on
+    margin-top: 700px;
 
 @media mq-normal
-    #wrap
+    .wrap
       margin-left: 280px;
+      margin-top:0;
+      position: static;
 
 
-#wrap .container {
+.wrap .container {
     max-width: 820px;
     width: 100%;
     margin-right: auto;
@@ -25,6 +38,7 @@
         text-align:center;
 #blog-list
     padding: 3rem !important;
+    background: #ffffff !important;
 
 .item
     margin-bottom: 3rem !important;
